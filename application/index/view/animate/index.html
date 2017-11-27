@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <link rel="shortcut icon" href="favicons/1.png">
+
+  <link rel="stylesheet" href="__CSS__/reset.css">
+  <link rel="stylesheet" href="__CSS__/common.css">
+  <link rel="stylesheet" href="__CSS__/index.css">
+  <link rel="stylesheet" href="__CSS__/donwload.css">
+  <link rel="stylesheet" type="text/css" href="__CSS__/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="__CSS__/home.css">
+  <!-- bootstrap -->
+    <link rel="stylesheet" href="__BOOTSTRAP__/css/bootstrap.css">
+
+     <link rel="stylesheet" href="__BOOTSTRAP__/css/bootstrap.css">
+    <script type="text/javascript" src="__BOOTSTRAP__/js/jquery-1.12.4.js"></script>
+     <script type="text/javascript" src="__BOOTSTRAP__/js/bootstrap.min.js"></script>
+      <script src="http://open.51094.com/user/myscript/159e341c4a9cc6.html"></script>
+     <!-- QQ -->
+     <!-- <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="appid" data-redirecturi="callback" charset="utf-8"></script> -->
+      <style>
+        .header-top__user .login-box .youxiang img
+          {
+           margin-right:100px;
+          }
+          .header-top__user .login-box .yonghu{
+            float:left;
+            text-decoration: none;
+            margin-right: 0px;
+          }
+      </style>
+</head>
+<body>
+
+  <header id="header">
+  {include file="public:header"}
+
+    <div class="header-c">
+      <div class="page-width">
+        <a href="#" id="header_logo"></a>
+        <p id="header_title"></p>
+        <div id="search" class="clearfix">
+          <div class="search-rank">排行榜</div>
+          <div class="search-box">
+            <input type="text" class="text" placeholder="Search here...">
+            <a href="#" class="btn"><i></i></a>
+            <div class="search-history">
+              <div class="title">历史搜索</div>
+              <div class="list">
+                <a href="#">努巴尼欢乐秀<i></i></a>
+                <a href="#">主播真会玩守望篇<i></i></a>
+                <a href="#">主播真会玩女神篇<i></i></a>
+                <a href="#">暴暴勺暴暴<i></i></a>
+                <a href="#">OverWatch<i></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-title">哔哩哔哩 (゜-゜)つロ 干杯~</div>
+      </div>
+    </div>
+  </header>
+
+  <nav id="nav">
+    <div class="page-width clearfix">
+      <ul class="nav-list">
+        <li class="item item-home">
+          <a href="/" class="link">首页</a>
+        </li>
+        {foreach $data as $val}
+        <li class="item">
+          <a href="{$val['url']}" class="link">
+            <div class="num"><i>887</i></div>
+            {$val['name']}
+          </a>
+          <ul class="nav-item__hover">
+            {foreach $val as $v}
+              {if is_array($v)}
+            <li>
+              <a href="{$v['url']}">
+                <em>{$v['name']}<i></i></em>
+              </a>
+            </li>
+              {/if}
+            {/foreach}
+          </ul>
+        </li>
+        {/foreach}
+        <li class="item item-square">
+          <a href="#" class="link">广场</a>
+          <div class="nav-square__hover">
+            <ul>
+              <li><a href="#"><i class="icon-activity"></i>活动中心</a></li>
+              <li><a href="#"><i class="icon-game"></i>游戏中心</a></li>
+              <li><a href="#"><i class="icon-news"></i>新闻中心</a></li>
+              <li><a href="#"><i class="icon-friend"></i>画友</a></li>
+              <li><a href="#"><i class="icon-tv"></i>芒果TV</a></li>
+            </ul><!-- 
+            <a href="#" class="activity"><img src="__IMAGES__/cont/nav-square__img.jpg" alt="#"></a> -->
+          </div>
+        </li>
+        <li class="item item-live">
+          <a href="#" class="link">直播</a>
+          <ul class="nav-item__hover">
+            <li>
+              <a href="#">
+                <em>推荐主播<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>手机直播<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>绘画专区<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>唱见舞见<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>御宅文化<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>单机联机<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>网络游戏<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>电子竞技<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>手游直播<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>放映厅<i></i></em>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="item item-room">
+          <a href="#" class="link">小黑屋</a>
+        </li>
+      </ul>
+      <div class="nav-gif"><img src="__IMAGES__/cont/nav_img.gif" alt="求领养"></div>
+    </div>
+  </nav>
+
+
+  <div id="main">
+    <div class="page-width">
+      <!-- 推广 -->
+      <div class="mainCont clearfix" id="promote">
+        <div class="main-side fr">
+          <div class="promote-side__title">
+            <a href="#">在线人数：715509</a>
+            <span>|</span>
+            <a href="#">最新投稿：5806</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 动画 -->
+      <div class="mainCont clearfix" id="animation" js-move="true">
+        <div class="pic-list fl" js-tab="true">
+          <div class="pic-list__title">
+            <i class="icon icon-animation"></i>
+            <h2>3D动画</h2>
+            <div class="tab-title">
+              <a href="#" class="cur">有新动态</a>
+              <a href="#">最新投稿</a>
+            </div>
+            <a href="#" class="main-link"><i></i>我的十月新番打开方式一定有问题</a>
+            <div class="more-wrap">
+              <a href="#" class="dynamic"><i></i>392条新动态</a>
+              <a href="#" class="more">更多<i></i></a>
+            </div>
+          </div>
+          <ul id="animate_list" class="pic-list__wrapper clearfix tab-cont__item tab-cont__cur">
+            <div class="storey-box clearfix">
+                     <div class="load-state">
+                        <span class="loading">正在加载....</span>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="main-side fr" js-tab="true">
+          <div class="main-side__title">
+            <div class="rank-t">
+              <h3>排行</h3>
+            </div>
+            <div class="tab-title">
+              <a href="#" class="cur">全部</a>
+              <a href="#">原创</a>
+            </div>
+            <div class="side-select">
+              <span>三日</span>
+              <i></i>
+            </div>
+          </div>
+          <div class="main-side__cont">
+            <div class="tab-cont">
+              <ul class="tab-cont__item main-rank">
+                <li class="item item-one">
+                  <a href="#">
+                    <i class="n1">1</i>
+                    <img src="__IMAGES__/cont/main-rank__img1.jpg" alt="#">
+                    <div>
+                      <p class="title">【1月】小林家的龙女仆 10【独家正版】</p>
+                      <p class="mark">综合评分: 109.3万</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#"><i class="n2">2</i>                  【1月】火影忍者 疾风传 719</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i class="n3">3</i>                    【4月】双星之阴阳师 48</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>4</i>狐妖小红娘 52 狗血大戏正上演 OP特效又更换</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>5</i>少年锦衣卫 第一季 06 怪谈</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>6</i>画江湖之不良人Ⅱ 35 阋墙之祸</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>7</i>【1月】黑白来看守所 24【独家正版】</a>
+                </li>
+              </ul>
+              <ul class="tab-cont__item main-rank">
+                <li class="item item-one">
+                  <a href="#">
+                    <i class="n1">1</i>
+                    <img src="__IMAGES__/cont/main-rank__img2.jpg" alt="#">
+                    <div>
+                      <p class="title">【1月】小林家的龙女仆 10【独家正版】</p>
+                      <p class="mark">综合评分: 109.3万</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#"><i class="n2">2</i>                  【1月】火影忍者 疾风传 719</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i class="n3">3</i>                    【4月】双星之阴阳师 48</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>4</i>狐妖小红娘 52 狗血大戏正上演 OP特效又更换</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>5</i>少年锦衣卫 第一季 06 怪谈</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>6</i>画江湖之不良人Ⅱ 35 阋墙之祸</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>7</i>【1月】黑白来看守所 24【独家正版】</a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="more">查看更多<i></i></a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- 电影 -->
+      <div class="mainCont clearfix" id="movie" js-move="true">
+        <div class="pic-list fl" js-tab="true">
+          <div class="pic-list__title">
+            <i class="icon icon-movie"></i>
+            <h2>2D动画</h2>
+            <div class="tab-title">
+              <a href="#" class="cur">有新动态</a>
+              <a href="#">最新投稿</a>
+            </div>
+            <a href="#" class="main-link"><i></i>我的十月新番打开方式一定有问题</a>
+            <div class="more-wrap">
+              <a href="#" class="dynamic"><i></i>392条新动态</a>
+              <a href="#" class="more">更多<i></i></a>
+            </div>
+          </div>
+          <ul id="movie_list" class="pic-list__wrapper clearfix tab-cont__item tab-cont__cur">
+                <div class="storey-box clearfix">
+                     <div class="load-state">
+                        <span class="loading">正在加载....</span>
+                    </div>
+                </div>
+          </ul>
+        </div>
+        <div class="main-side fr" js-tab="true">
+          <div class="main-side__title">
+            <div class="rank-t">
+              <h3>排行</h3>
+            </div>
+            <div class="tab-title">
+              <a href="#" class="cur">全部</a>
+              <a href="#">原创</a>
+            </div>
+            <div class="side-select">
+              <span>三日</span>
+              <i></i>
+            </div>
+          </div>
+          <div class="main-side__cont">
+            <div class="tab-cont">
+              <ul class="tab-cont__item main-rank">
+                <li class="item item-one">
+                  <a href="#">
+                    <i class="n1">1</i>
+                    <img src="__IMAGES__/cont/main-rank__img1.jpg" alt="#">
+                    <div>
+                      <p class="title">【1月】小林家的龙女仆 10【独家正版】</p>
+                      <p class="mark">综合评分: 109.3万</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#"><i class="n2">2</i>                  【1月】火影忍者 疾风传 719</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i class="n3">3</i>                    【4月】双星之阴阳师 48</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>4</i>狐妖小红娘 52 狗血大戏正上演 OP特效又更换</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>5</i>少年锦衣卫 第一季 06 怪谈</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>6</i>画江湖之不良人Ⅱ 35 阋墙之祸</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>7</i>【1月】黑白来看守所 24【独家正版】</a>
+                </li>
+              </ul>
+              <ul class="tab-cont__item main-rank">
+                <li class="item item-one">
+                  <a href="#">
+                    <i class="n1">1</i>
+                    <img src="__IMAGES__/cont/main-rank__img2.jpg" alt="#">
+                    <div>
+                      <p class="title">【1月】小林家的龙女仆 10【独家正版】</p>
+                      <p class="mark">综合评分: 109.3万</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="item">
+                  <a href="#"><i class="n2">2</i>                  【1月】火影忍者 疾风传 719</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i class="n3">3</i>                    【4月】双星之阴阳师 48</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>4</i>狐妖小红娘 52 狗血大戏正上演 OP特效又更换</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>5</i>少年锦衣卫 第一季 06 怪谈</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>6</i>画江湖之不良人Ⅱ 35 阋墙之祸</a>
+                </li>
+                <li class="item">
+                  <a href="#"><i>7</i>【1月】黑白来看守所 24【独家正版】</a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="more">查看更多<i></i></a>
+          </div>
+        </div>
+      </div>
+
+  <footer id="footer">
+    <div class="page-width">
+      <ul class="footer-c clearfix">
+         <li>
+           <h6>dilidili</h6>
+           <a href="#" class="card">关于我们</a>
+           <a href="#" class="card">友情链接</a>
+           <a href="#" class="card">周边</a>
+           <a href="#" class="card">联系我们</a>
+           <a href="#" class="card">加入我们</a>
+           <a href="#" class="card">官方认证</a>
+         </li>
+         <li class="middle">
+           <h6>传送门</h6>
+           <a href="#" class="card">帮助中心</a>
+           <a href="#" class="card">高级弹幕</a>
+           <a href="#" class="card">活动专题页</a>
+           <a href="#" class="card">侵权申诉</a>
+           <a href="#" class="card">分院帽计划</a>
+           <a href="#" class="card">活动中心</a>
+           <a href="#" class="card">用户反馈论坛</a>
+           <a href="#" class="card">壁纸站</a>
+           <a href="#" class="card">名人堂</a>
+         </li>
+         <li class="footer-icon">
+           <div class="cont">
+             <a href="#" class="app">
+               <i></i>
+               <em>手机端下载</em>
+               <img src="__IMAGES__/app-qrcode.png" alt="#">
+             </a>
+             <a href="#" class="weibo">
+               <i></i>
+               <em>新浪微博</em>
+               <img src="__IMAGES__/weibo-qrcode.png" alt="#">
+             </a>
+             <a href="#" class="weixin">
+               <i></i>
+               <em>官方微信</em>
+               <img src="__IMAGES__/weixin-arcode.gif" alt="#">
+             </a>
+           </div>
+         </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <div id="sideBar">
+    <div class="sideBar-list">
+      <a href="#">直播</a>
+      <a href="#">动画</a>
+      <a href="#">番剧</a>
+      <a href="#">国创</a>
+      <a href="#">音乐</a>
+      <a href="#">舞蹈</a>
+      <a href="#">游戏</a>
+      <a href="#">科技</a>
+      <a href="#">生活</a>
+      <a href="#">鬼畜</a>
+      <a href="#">时尚</a>
+      <a href="#">广告</a>
+      <a href="#">娱乐</a>
+      <a href="#">电影</a>
+      <a href="#">TV剧</a>
+      <a href="#"><i></i>排序</a>
+    </div>
+    <div class="sideBar-line"></div>
+    <a href="#" class="sideBar-toTop" id="backTop"></a>
+  </div>
+
+<script type="text/javascript">
+  
+
+
+      $.post(
+        "/index/index/getAnimate",
+        function(data)
+        {
+          $("#animate_list").children().remove();
+          $("#movie_list").children().remove();
+          for (var i = 0; i < data.length; i++) {
+          	 if(data[i].tid == 3){
+              $("#animate_list").append('<li class="item"><a href=/index/Radioinfo/show?id='+data[i]['vid']+' class="img-link"><img src='+data[i].img_src+' alt="#"><span class="mask"></span><span class="time">3:39</span></a><div class="img-info"><a href="#">'+data[i].title+'~</a><div class="btm"><div class="user"><i></i>'+data[i].nickname+'</div><div class="online"><i></i>6732</div></div></div></li>');
+            }else
+            {
+              $("#movie_list").append('<li class="item"><a href=/index/Radioinfo/show?id='+data[i]['vid']+' class="img-link"><img src='+data[i].img_src+' alt="#"><span class="mask"></span><span class="time">3:39</span></a><div class="img-info"><a href="#">'+data[i].title+'~</a><div class="btm"><div class="user"><i></i>'+data[i].nickname+'</div><div class="online"><i></i>6732</div></div></div></li>');
+            }
+          }
+        }
+        );
+
+
+
+</script>
+ {include file="public:footer"}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="applicable-device" content="pc,mobile">
+<title>个人主页 - 羁绊站群会员中心</title>
+<link rel="stylesheet" href="__BOOTSTRAP__/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="__CSS__/master.css" />
+  <link rel="stylesheet" href="__CSS__/reset.css">
+  <link rel="stylesheet" href="__CSS__/common.css">
+  <link rel="stylesheet" href="__CSS__/index.css">
+
+<!--<script src="/Style/js/main.js"></script>-->
+<script type="text/javascript" src="__BOOTSTRAP__/js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="__BOOTSTRAP__/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!--公用顶部开始-->
+  <header id="header">
+  {include file="public:header"}
+<!--公用顶部结束-->
+<div class="warpbox">
+    <div class="warptit"></div>
+    <div class="w1000 clear">
+
+            <div class="leftside fleft">
+    <h1 class="adminlogo"><strong>会员</strong>中心<em>usr.005.tv</em></h1>
+    <div class="adminbox">
+        <div class="adminname fonttips">liliuli808</div>
+        <div class="adminlink">
+            <button id="btn-sign-user" data-checked="0" data-group="1" class="btn primary"><i class="icon icon-check-circle"></i>签到</button>
+        </div>
+        <div class="admin-extra">
+            <div class="space"></div>
+            <a href="javascript:void(0)" ><span class="pts" id="user_credits" >5</span> <span class="hint">经验</span></a>
+            <a href="javascript:void(0)" title="0% - 当前总经验值：5 / 下一级所需总经验值：100" id="user_level_tips" ><span class="pts">LV1</span> <span class="hint">等级</span></a>
+            <span class="clearfix"></span>
+        </div>
+        <div class="adminlink">
+            <a class="fontblue" href="/User/setting.html">设置</a><a href="/User/loginout.html">退出</a>
+        </div>
+    </div>
+    <ul class="leftnav">
+        <li><a href="{:url('index/userall/user_info')}" class="active" ><em class="zhuye"></em>个人主页</a></li>
+        <li><a href="{:url('index/userall/member')}" ><em class="mood"></em>会员</a></li>
+        <li><a href="{:url('index/userall/upload_head')}"  ><em class="shoucang"></em>修改头像</a></li>
+        <li><a class="opennavbtn" herf="javascript:;" class="active"><em class="guanli"></em>账号管理<span class="openico"></span></a>
+            <div class="navsonbox" style="display:block;" >
+                <a href="{:url('/index/userall/set_user')}" >信息设置</a>   
+            </div>
+        </li>
+        <li><a class="opennavbtn" herf="javascript:;" class="active"><em class="guanli"></em>账号管理<span class="openico"></span></a>
+            <div class="navsonbox" style="display:block;" >
+                <a href={:url('/index/userall/set_user')} >信息设置</a>
+                <a href="/User/passwd.html" >安全管理</a>
+                <a href="/User/loginout.html">退出登录</a>
+            </div>
+        </li>
+          <li><a class="opennavbtn" herf="javascript:;"><em class="haoyou"></em>我的投稿<span class="openico"></span></a>
+            <div class="navsonbox" style="display:none;" >
+                <!--<a href="/Contrib/add.html" >文章投稿</a>-->
+                <!--<a href="/Contrib/all.html" >投稿管理</a>-->
+                <a href="http://www.dilidili.com/member/article_add1.php" >链接投稿</a>
+                  <!--<a href="http://www.dilidili.com/member/article_add1.php">视频投稿</a>-->
+                  <a href="http://www.dilidili.com/member/content_list.php?channelid=17">过往投稿</a>
+                <!--<a href="/Contrib/upload_video.html" >视频投稿</a>-->
+                  <!--<a href="/Contrib/post_all.html" >过往投稿</a>-->
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+        <div class="rightmain fright">
+            <div class="mainbox" style="position: relative;">
+                <div class="zytop clear">
+                    <div class="adminzy fleft">
+                        <div class="adminnametext">{$Request.session.user.nickname}<span>1点赞币：<strong>0</strong>个</span></div>
+                        <div class="adminmood fonthui">来说点什么吧~~</div>
+                    </div><br>
+                    <form action='{:url("index/userall/doupload")}' id="uploadimg" method="post" enctype="multipart/form-data">
+                    <div style="width: 500px" id="upload_head">
+                            <label class="fileLabel" for="upfiles" style=" display: inline-block;width:180px;height: 50px;line-height: 20px;text-align: center;border: 1px solid #8cc051;border-radius: 5px;background: #f1f2f5;cursor: pointer; margin-left: 200px;">选择头像</label>
+                            <input id="upfiles" name="image" type="file" class="fileInput" style="display: none">
+                            <img src="{$Request.session.user.img ?? '//static.hdslb.com/images/member/noface.gif'}"  id="newimg" style="margin-left:211px;margin-top:10px;width:150px;height:150px;"></img>
+                            <input type="submit" name="uploadbtn" class="btn btn-primary" style="position: absolute;bottom: 0px;left: 238px;display: none;" name="upload"  value="更新">
+                    </div>
+                     </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="warpbott"></div>
+</div>
+ {include file="public:footer"}
+

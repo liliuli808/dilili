@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" type="text/css" href="__CSS__/upload_vid.css">
+<script type="text/javascript" src="__JS__/jquery-2.1.4.min.js"></script>
+<link rel="stylesheet" href="__CSS__/reset.css">
+  <link rel="stylesheet" href="__CSS__/common.css">
+  <link rel="stylesheet" href="__CSS__/index.css">
+  <link rel="stylesheet" href="__CSS__/reset.css">
+  <link rel="stylesheet" href="__CSS__/common.css">
+  <link rel="stylesheet" href="__CSS__/index.css">
+  <link rel="stylesheet" href="__CSS__/donwload.css">
+
+  <!-- bootstrap -->
+    <link rel="stylesheet" href="__BOOTSTRAP__/css/bootstrap.css">
+
+     <link rel="stylesheet" href="__BOOTSTRAP__/css/bootstrap.css">
+    <script type="text/javascript" src="__BOOTSTRAP__/js/jquery-1.12.4.js"></script>
+     <script type="text/javascript" src="__BOOTSTRAP__/js/bootstrap.min.js"></script>
+      <script src="http://open.51094.com/user/myscript/159e341c4a9cc6.html"></script>
+</head>
+<style type="text/css">
+li{
+	list-style: none;
+	
+}
+
+.dropdown{
+	float: left;
+	width: 60px;
+	position: relative;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccd0d7;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    background: #fff;
+} 
+
+.cover-box {
+    width: 160px;
+    height: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    top: 254px;
+    left: 210px;
+    border: 1px solid #ccc;
+}
+
+.cover-mask
+{
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABkCAIAAACO1KzYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjhDMDJGREY3MDI0NTExRTc4RTZGOEQ2RUIxODU5OEQ0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjhDMDJGREY4MDI0NTExRTc4RTZGOEQ2RUIxODU5OEQ0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OEMwMkZERjUwMjQ1MTFFNzhFNkY4RDZFQjE4NTk4RDQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OEMwMkZERjYwMjQ1MTFFNzhFNkY4RDZFQjE4NTk4RDQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6AfSOmAAAHrElEQVR42uxd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);
+	position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 100px;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+}
+.cover-preview
+{
+	width: 160px;
+    height: 100px;
+}
+.cover-wrp .cover-box .cover-mask, .cover-wrp .cover-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+</style>
+<body>
+<header id="header">
+ {include file="public:header"}
+<div class="app">
+	<div class="vid_upload">
+			<div class="bg_wrapper ticket-container">
+					<div class="upload-bar-wrapper">
+						<div class="upload-bar-img img"></div>
+						<label for="vidio_input">
+						<div id='big-btn' class="upload-music-bar-wrapper disabled">
+								<div class="pload-music-bar-icon disabled">
+									<div class="icon-img disabled"></div>
+								</div>
+								<div class="pload-music-bar-btn upload-btn">
+									<div data-v-17fc51af="" class="pload-music-bar-btn-text disabled">上传视频</div>
+									<div data-v-17fc51af="" class="pload-music-bar-btn-tips disabled">请上传MP4、FLY、MKV格式</div>
+								</div>
+						</div>
+						</label>
+						<label for="img_upload">
+							<div class="cover-box is-pic">
+								<img  class="cover-preview">
+								<div class="cover-mask"></div>
+								<input type="file" id="img_upload" accept="image/jpg, image/jpeg, image/png" data-cover-click="" style="display: none;">
+							</div>
+						</label>
+						<input type="file" id="vidio_input" style="display: none" name="vidio_upload">
+						<div id="show_all" style="display: none;">
+						<div id="blue_file" style="width: 44px;height: 44px; position: absolute;bottom: 288px;left: 100px;background:#09F7F7;"></div>
+						<div id="file_name" style="width: 544px;height: 44px; position: absolute;bottom: 247px;left: 100px;"></div>
+						 <div id="parent" style="width:550px; height:10px; border:2px solid #09F;    position: absolute;bottom: 289px;left: 147px;">
+						  	<div id="son" style="width:0; height:100%; background-color:#09F; text-align:center; line-height:10px; font-size:20px; font-weight:bold;"></div>
+						 </div> 
+						 </div>
+					</div>
+					<div class="hide_form" style=" position: absolute;bottom: 0px;left: 147px;">
+						 
+								<span>选择分区</span>
+								<li class="dropdown open"><button class="btn btn-primary">动画</button>
+									<ul style="display: none;" class="dropdown-menu">
+										<li class="btn_span" value="3"><span>3D动画</span></li>
+										<li class="btn_span" value="4"><span>2D动画</span></li>
+									</ul>
+								</li>
+								<li class="dropdown open"><button class="btn btn-primary">电影</button>
+									<ul style="display: none;" class="dropdown-menu">
+										<li class="btn_span" value="5"><span>欧美电影</span></li>
+										<li class="btn_span" value="6"><span>日本电影</span></li>
+										<li class="btn_span" value="7"><span>国产电影</span></li>
+									</ul>
+								</li>
+								<br />
+								<span>添加标题</span>
+								<input type="text" class="form-control" name="title" />
+
+								<button id="subbtn" style="display: none;" class="btn btn-primary">提交</button>
+						 </div>
+				</div>
+	</div>
+</div>
+<script type="text/javascript">
+var upload = $("#vidio_input");
+var bigbtn = $("#big-btn");
+var show_all = $("#show_all");
+upload.on('change',function(){
+var video = upload.get(0).files[0];
+var filename = video.name;
+if(checkFileExt(filename))
+{
+	var formData = new FormData();
+var tid = 0;
+show_all.show();
+$("#file_name").html(filename);
+formData.append('file',video);
+  $.ajax({
+   type: "POST",
+   url: "doupload",
+   data: formData ,
+   processData : false, 
+   //必须false才会自动加上正确的Content-Type 
+   contentType : false , 
+   xhr: function(){
+    var xhr = $.ajaxSettings.xhr();
+    if(onprogress && xhr.upload) {
+     xhr.upload.addEventListener("progress" , onprogress, false);
+     return xhr;
+    }
+   }
+  });
+}else{alert('格式错误')}
+});
+  
+ function onprogress(evt){
+  var loaded = evt.loaded;     //已经上传大小情况 
+  var tot = evt.total;      //附件总大小 
+  var per = Math.floor(100*loaded/tot);  //已经上传的百分比
+  var parent = $("#parent");
+  $("#son").html( per +"%" );
+  $("#son").css("width" , per +"%");
+  if(per == 100)
+  {
+  	$("#subbtn").show();
+  }
+}
+
+var btn = $(".dropdown").children();
+btn.each(function(){
+	$(this).click(function(event){
+		 event.stopPropagation();
+		$(this).next().show();
+	});
+
+});
+$(document).click(function(){
+    btn.next().hide();
+});
+
+var btn_span = $(".btn_span");
+
+btn_span.each(function(){
+
+	$(this).click(function()
+	{
+		tid = $(this).val()
+		$.post(
+			"showtype",
+			{'pid':tid},
+			function(data)
+			{
+				$("#subbtn").after('<span style="color:red;">您当前的分区是:'+data.data+'</span>');
+			}
+			);
+	});
+});
+$("#subbtn").click(function(){
+
+	var title = $("input[name=title]").val();
+	var paramrs = {'title':title};
+	$.post(
+		"uploaddb",
+		paramrs,
+		function(data)
+		{
+			if(data.status)
+			{
+					$("#subbtn").after('<span style="color:green;">上传成功</span>');
+			}else{
+				$("#subbtn").after('<span style="color:red;">上传失败</span>');
+			}
+		}
+		);
+});
+var img_input = $("#img_upload");
+$("#img_upload").on("change",function(e){
+  var formData = new FormData();
+  file = e.target.files[0];
+  url = URL.createObjectURL(file);
+  $(".cover-preview").attr('src',url);
+  $(".cover-mask").hide();
+  var img = img_input.get(0).files[0];
+  formData.append('file',img);
+  $.ajax({
+   type: "POST",
+   url: "doupload",
+   data: formData ,
+   processData : false, 
+   //必须false才会自动加上正确的Content-Type 
+   contentType : false , 
+   	
+  });
+});
+  //$("#uploadimg").submit();
+function checkFileExt(filename)
+{
+ var flag = false; //状态
+ var arr = ["mp4","rmvb","mtv"];
+ //取出上传文件的扩展名
+ var index = filename.lastIndexOf(".");
+ var ext = filename.substr(index+1);
+ //循环比较
+ for(var i=0;i<arr.length;i++)
+ {
+  if(ext == arr[i])
+  {
+   flag = true; //一旦找到合适的，立即退出循环
+   break;
+  }
+ }
+ //条件判断
+ return flag;
+}
+</script>
+ {include file="public:footer"}
+</body>
+</html>

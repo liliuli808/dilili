@@ -1,0 +1,43 @@
+.storey-box {
+    height: 336px;
+    overflow: hidden;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.load-state {
+    text-align: center;
+    padding: 10px 0;
+    color: #99a2aa;
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.load-state span {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.load-state span:before {
+    text-align: center;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/empty-icon_1.png);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+.load-state span.loading:before {
+    width: 24px;
+    height: 24px;
+    margin-top: -5px;
+    background-image: url(../images/loading_10.gif);
+}

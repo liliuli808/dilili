@@ -1,0 +1,106 @@
+	
+*{
+	margin: 0;
+	padding: 0;
+}
+	.app{
+	padding-top: 20px;
+    font-family: Microsoft YaHei,Arial,Helvetica,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url(../images/1920.61256b0.png);
+    width: 100%;
+    height: 1040px;
+    background-repeat: no-repeat;
+    background-size: 1920px;
+    background-position: 50%;
+	}
+
+
+	.vid_upload{
+		height: 500px;
+		box-shadow: 0 2px 0 rgba(0,0,0,.1);
+		position: relative;
+	}
+
+
+	.bg_wrapper{
+		position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 701px;
+    height: 392px;
+    background-image: url(//s1.hdslb.com/bfs/static/audio/submit/static/img/bg.d8f5a7a.png);
+	}
+	.ticket-container
+	{
+	height: auto;
+    width: 980px;
+    height: 100%;
+    margin: 30px auto 0;
+    background-color: #fff;
+	}
+	.upload-bar-wrapper
+	{
+		overflow: hidden;
+        height: 100%;
+	}
+
+	.upload-bar-img {
+	top: 10px;
+    left: 255px;
+    z-index: 999;
+    position: absolute;
+    width: 159px;
+    height: 181px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(//s1.hdslb.com/bfs/static/audio/submit/static/img/music-theme.ce7511c.png);
+	}
+
+	.upload-music-bar-wrapper {
+    background-color: #f4f5f7;
+    border: 1px solid #babec4;
+    cursor: not-allowed;
+}
+
+ .upload-music-bar-wrapper
+{
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 74px;
+    width: 350px;
+    position: absolute;
+    top: 73px;
+    left: 50%;;
+    display: flex;
+    transform: translate(-50%);
+    height: 74px;
+}
+
+.pload-music-bar-icon {
+        border-right-color: #babec4;
+        padding-right: 20px;
+	    border-right: 1px solid #b0e1f6;
+	    margin-left: 77px;
+}
+
+.icon-img{
+	 width: 38px;
+    height: 38px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAMAAACf4xmcAAAAYFBMVEVHcEy6vsS5ucS6vsO6vsSsrL66vsS6vsS0tMi6vsO6vcO6vsS6vsS5v8W5vsS6vsS6vcS5vsO5v8W6vsS6vsS6vcO6v8S5vMa6vsO5vcS6vcS6vsS5vsS6vsO8vMa6vsSQx+0aAAAAH3RSTlMA1ArhkQNU9Qb6a3BmKFyzwhEspdusNDWKQMl+7kQb5rKpLAAAATpJREFUeNqN0+lygyAUBeALyO6SRM1qe97/LdspJkAjhvNLnW9kuAsVAvgjfQ4A/ZAVbAAG/pnRTWCuYNQtcBWMFBZeweiOtoa1GGpYB1HDOCwlMWoUFmusezE6HBKlJsRElkdeAeY7QzFb7Artsu7lzAyPvxNhv4jK7KihfrGAoz1GDpOkHkzuM8mgaIanfUYOIwl0+yz0wiKtxKlhWrPmlDEDm73LBmsaIPt1xkbY5sz5ubHYYQrLJTxdlk3Whz7HIWw3WfimcXyVvpYtJZYfethgmr9dQeVsgSG63/4XZEwUh6UJHZEfQrljeWXaGojQesMez2ZNoVlpPOZ1kL7ZcCstuGTon2Np/F2j32QOwsQhL+XLQq0r08oSks7iuo5PXMA8/ORZcms1oZgpqbPpZ2HfiRVzHw75ATLHJVMu1ricAAAAAElFTkSuQmCC);
+}
+
+.pload-music-bar-btn{
+	margin-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+.pload-music-bar-btn-text {
+    color: #babec4;
+}
+.pload-music-bar-btn-tips{
+	color: #babec4;
+}

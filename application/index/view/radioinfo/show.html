@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{$data['title']}</title>
+
+    
+<meta name="keywords" content="哔哩哔哩,Bilibili,B站,弹幕,动画,MAD·AMV,泛式," />
+<meta name="description" content="简介: 恭贺FGO国服一周年，跟着从者们的语音回顾这一年的BGO大事件吧~ 使用素材: Fate/Grand Order, Fate/Zero, Fate/ Extella, Fate/ Apocrypha, Fate/Stay night 视频类型: 混合系MAD BGM【音乐名】: You Say Run BGM【音乐人】: 林ゆうき" />
+<meta name="author" content="泛式" />
+<meta name="spm_prefix" content="333.338">
+
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="//static.hdslb.com/images/favicon.ico">
+    <link rel="search" type="application/opensearchdescription+xml" href="//static.hdslb.com/opensearch.xml" title="哔哩哔哩" />
+
+    <link rel="stylesheet" href="__CSS__/query-ui.css" type="text/css">
+    <link rel="stylesheet" href="__CSS__/page-core.css" type="text/css" />
+
+    <script type="text/javascript" src="__JS__/jquery.min.js"></script>
+    <script type="text/javascript" src="__JS__/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="__JS__/seed.js"></script>
+
+    
+<link rel="stylesheet" href="__CSS__/tag-index2.0.css" type="text/css">
+<link rel="stylesheet" href="__CSS__/elec.css">
+<link rel="stylesheet" href="__CSS__/chart.min.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/comment.min.css">
+<link href="__CSS__/scojs.css" rel="stylesheet">
+  <link href="__CSS__/colpick.css" rel="stylesheet">
+  <link href="__BOOTSTRAP__/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="__CSS__/main.css">
+
+<!-- add by liqian -->
+<!-- 视频详情页增加一个投诉入口,番剧详情页无需增加这个入口 -->
+<link rel="stylesheet" href="__CSS__/appeal.css" type="text/css">
+
+<!-- end -->
+
+<script type="text/javascript" src="__JS__/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="__JS__/swfobject.js"></script>
+<script type="text/javascript" src="__JS__/video.min.js"></script>
+<script type="text/javascript" src="__JS__/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="__JS__/jquery.xdomainrequest.min.js"></script>
+
+
+  </head>
+
+  <body>
+    
+<img src="picture/1c1680b0fa439d915a5ed0a5b08202ac7199d3b0.jpg" style="display:none;" class="cover_image"/>
+
+    <script type="text/javascript">biliAdjust(); $(function(){ biliAdjust(true); $(window).resize(biliAdjust); });</script>
+
+    <div class="float_window"><div class="close"></div><div id="float_window"></div></div>
+
+    <div class="z_top_container">
+      <div class="z_top b-header-blur">
+        <div class="b-header-mask-wrp"><div class="b-header-mask-bg"></div><div class="b-header-mask"></div></div>
+        <div class="z_header">
+          <div class="z_top_nav">
+            <ul>
+  <li class="home">
+    <a class="i-link" href="//www.bilibili.com/index.html"><span>主站</span></a>
+  </li>
+    <li class="hbili"><a class="i-link" href="http://h.bilibili.com/" title="画友">画友</a></li>
+  <li class="b-gc" hasframe="true">
+    <a class="i-link" href="//game.bilibili.com/" title="游戏中心">游戏中心</a>
+    <div class="i_div game" data-frame="game"></div>
+  </li>
+    <li class="live" hasframe="true">
+    <a class="i-link" target="_blank" href="//live.bilibili.com" title="直播">直播</a>
+    <div class="i_div stream" data-frame="stream"></div>
+  </li>
+  <li class="b-ml"><a class="i-link" target="_blank" href="//show.bilibili.com/platform/home.html" title="会员购">会员购</a></li>
+  <li class="b-zb"><a class="i-link" target="_blank" href="//bmall.bilibili.com/#!/" title="周边">周边</a></li>
+  <li class="shouji">
+    <a class="i-link" target="_blank" href="//app.bilibili.com" title="移动端">移动端</a>
+    <div class="mobile-p-box"><div class="mobile-p-qrcode"></div></div>
+  </li>
+</ul>
+          </div>
+          <div class="uns_box">
+  <ul class="menu">
+    <li id="i_menu_profile_btn" guest="no" class="u-i i_user" i_menu="#i_menu_profile">
+      <a class="i-link" href="//space.bilibili.com/" target="_blank">
+        <img class="i_face">
+      </a>
+      <div id="i_menu_profile" class="i_menu">
+        <div class="i_menu_bg_t"></div>
+        <div class="info clearfix"><div class="uname"></div><div class="coin"></div></div>
+        <div class="member-menu-wrp">
+          <ul class="member-menu">
+            <li><a href="https://account.bilibili.com/site/home" target="_blank" class="account"><i class="b-icon b-icon-p-account"></i>个人中心</a></li>
+            <li><a href="//member.bilibili.com/v/#!/article" target="_blank" class="member"><i class="b-icon b-icon-p-member"></i>投稿管理</a></li>
+            <li><a href="https://pay.bilibili.com/" target="_blank" class="wallet"><i class="b-icon b-icon-p-wallet"></i>B币钱包</a></li>
+            <li><a href="//link.bilibili.com/p/center/index" target="_blank" class="live"><i class="b-icon b-icon-p-live"></i>直播中心</a></li>
+            <li><a href="//show.bilibili.com/platform/home.html" target="_blank" class="ticket"><i class="b-icon b-icon-p-ticket"></i>会员购订单</a></li>
+          </ul>
+        </div>
+        <div class="member-bottom">
+          <a class="logout" href="https://account.bilibili.com/login?act=exit">退出</a>
+        </div>
+      </div>
+    </li>
+    <li id="i_menu_become_vip" guest="no" i_menu="become_vip" class="u-i">
+      <a class="i-link" href="//big.bilibili.com/site/big.html" target="_blank">成为大会员</a>
+    </li>
+    <li id="i_menu_community_msg_btn" guest="no" i_menu="community_msg" class="u-i">
+            <a class="i-link" href="//message.bilibili.com" target="_blank">消息</a>
+        </li>
+    <li id="i_menu_msg_btn" guest="no" i_menu="#dyn_wnd" class="u-i">
+      <div class="num" id="dynamic_num_total"></div>
+      <a class="i-link" href="//www.bilibili.com/account/dynamic" target="_blank">动态</a>
+    </li>
+    <li id="i_menu_watchLater_btn" guest="no" class="u-i" style="display:list-item">
+      <a class="i-link" href="//www.bilibili.com/watchlater/#/list" target="_blank">稍后再看</a>
+    </li>
+    <li id="i_menu_fav_btn" guest="no" i_menu="#i_menu_fav" class="u-i">
+      <a class="i-link" href="//space.bilibili.com/#!/favlist" target="_blank">收藏夹</a>
+    </li>
+    <li class="u-i i_user" id="i_menu_login_reg" guest="yes">
+      <a id="login_default_face" href="//passport.bilibili.com/login">
+        <img class="i_face" src="picture/akari.jpg">
+      </a>
+      <div class="i_menu" id="i_menu_login">
+        <p class="tip">登录后你可以：</p>
+        <div class="img">
+          <img src="picture/danmu.png">
+          <img src="picture/danmu.png">
+        </div>
+        <a class="login-btn" href="//passport.bilibili.com/login">登录</a>
+        <p class="reg">首次使用？<a href="//passport.bilibili.com/register/phone.html">点我去注册</a></p>
+      </div>
+    </li>
+    <li id="i_menu_history_btn" class="u-i">
+      <a class="i-link" href="//www.bilibili.com/account/history">历史</a>
+    </li>
+    <li class="u-i b-post">
+      <a class="i-link" href="//member.bilibili.com/v/video/submit.html" target="_blank">投 稿</a>
+      <ul class="s-menu">
+        <li class="article"><a href="//member.bilibili.com/v/#/text-apply" target="_blank"><i class="b-icon b-icon-art"></i><em>专栏投稿</em></a></li>
+        <li class="music-up"><a href="//www.bilibili.com/audio/submit/" target="_blank"><i class="b-icon b-icon-music"></i><em>音频投稿</em></a></li>
+        <li><a href="//member.bilibili.com/v/video/submit.html" target="_blank"><i class="b-icon b-icon-vp"></i><em>视频投稿</em></a></li>
+        <li><a href="//member.bilibili.com/v/#/article" target="_blank"><i class="b-icon b-icon-vm"></i><em>投稿管理</em></a></li>
+        <li><a href="//member.bilibili.com/v/" target="_blank"><i class="b-icon b-icon-vc"></i><em>创作中心</em></a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+        </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="h-center">
+        <a href="//www.bilibili.com/index.html" class="logo"></a>
+        <a href="//www.bilibili.com/random" target="_blank" title="随便找个视频看看?" class="lsb"></a>
+      </div>
+      <div class="num nav-main">
+        <div class="menu-wrapper">
+          <ul class="nav-menu">
+  <li class="m-i home"><a class="i-link" href="//www.bilibili.com/index.html"><em>首页</em></a></li>
+  <!-- 动画 -->
+  <li class="m-i " data-tid="1">
+    <a class="i-link" href="//www.bilibili.com/video/douga.html"><em>动画</em><div class="v-num"><span class="addnew_1">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//www.bilibili.com/video/douga-mad-1.html"><b>MAD·AMV<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/douga-mmd-1.html"><b>MMD·3D<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/douga-voice-1.html"><b>短片·手书·配音<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/douga-else-1.html"><b>综合<em></em></b></a></li>
+    </ul>
+  </li>
+  <!-- 番剧 -->
+  <li class="m-i " data-tid="13">
+    <a class="i-link" href="//bangumi.bilibili.com/22/"><em>番剧</em><div class="v-num"><span class="addnew_13">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//www.bilibili.com/video/bangumi-two-1.html"><b>连载动画<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/part-twoelement-1.html"><b>完结动画<em></em></b></a></li>
+            <li><a href="//www.bilibili.com/video/douga-else-information-1.html"><b>资讯<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/bagumi_offical_1.html"><b>官方延伸<em></em></b></a></li>
+            <li><a href="//bangumi.bilibili.com/anime/timeline"><b>新番时间表<em></em></b></a></li>
+            <li><a href="//bangumi.bilibili.com/anime/index"><b>番剧索引<em></em></b></a></li>
+    </ul>
+  </li>
+  <!-- 国创 -->
+  <li class="m-i " data-tid="167">
+    <a class="i-link" href="//bangumi.bilibili.com/guochuang/"><em>国创</em><div class="v-num"><span class="addnew_167">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//www.bilibili.com/video/bangumi_chinese_1.html"><b>国产动画<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/guochuang-fanvid-1.html"><b>国产原创相关<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/glove-puppetry-1.html"><b>布袋戏<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/guochuang-offical-1.html"><b>资讯<em></em></b></a></li>
+      
+      <li><a href="//bangumi.bilibili.com/guochuang/timeline"><b>新番时间表<em></em></b></a></li>
+      <li><a href="//bangumi.bilibili.com/guochuang/index"><b>国产动画索引<em></em></b></a></li>
+    </ul>
+  </li>
+  <!-- 音乐 -->
+  <li class="m-i " data-tid="3">
+    <a class="i-link" href="//www.bilibili.com/video/music.html"><em>音乐</em><div class="v-num"><span class="addnew_3">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//www.bilibili.com/video/music-original-1.html"><b>原创音乐<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/music-Cover-1.html"><b>翻唱<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/music-vocaloid-1.html"><b>VOCALOID·UTAU<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/music-perform-1.html"><b>演奏<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/music-coordinate-1.html"><b>三次元音乐<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/music-oped-1.html"><b>OP/ED/OST<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/music-collection-1.html"><b>音乐选集<em></em></b></a></li>
+    </ul>
+  </li>
+  <!-- 舞蹈 -->
+  <li class="m-i " data-tid="129">
+    <a class="i-link" href="//www.bilibili.com/video/dance.html"><em>舞蹈</em><div class="v-num"><span class="addnew_129">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//www.bilibili.com/video/dance-1.html"><b>宅舞<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/three-dimension-dance-1.html"><b>三次元舞蹈<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/dance-demo-1.html"><b>舞蹈教程<em></em></b></a></li>
+    </ul>
+  </li>
+  <!-- 游戏 -->
+  <li class="m-i " data-tid="4">
+    <a class="i-link" href="//www.bilibili.com/video/game.html"><em>游戏</em><div class="v-num"><span class="addnew_4">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//www.bilibili.com/video/videogame-1.html"><b>单机游戏<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/esports-1.html"><b>电子竞技<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/mobilegame-1.html"><b>手机游戏<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/onlinegame-1.html"><b>网络游戏<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/boardgame-1.html"><b>桌游棋牌<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/gmv-1.html"><b>GMV<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/music-game-1.html"><b>音游<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/game-mugen-1.html"><b>Mugen<em></em></b></a></li>
+    </ul>
+  </li>
+  <!-- 科技 -->
+  <li class="m-i " data-tid="36">
+    <a class="i-link" href="//www.bilibili.com/video/technology.html"><em>科技</em><div class="v-num"><span class="addnew_36">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//www.bilibili.com/video/tech-popular-science-1.html"><b>纪录片<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/tech-fun-1.html"><b>趣味科普人文<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/tech-wild-1.html"><b>野生技术协会<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/speech-course-1.html"><b>演讲·公开课<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/tech-future-military-1.html"><b>星海<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/tech-future-digital-1.html"><b>数码<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/tech-future-other-1.html"><b>机械<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/tech-future-automobile-1.html"><b>汽车<em></em></b></a></li>
+    </ul>
+  </li>
+  <!-- 生活 -->
+  <li class="m-i " data-tid="160">
+    <a class="i-link" href="//www.bilibili.com/video/life.html"><em>生活</em><div class="v-num"><span class="addnew_160">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//www.bilibili.com/video/ent_funny_1.html"><b>搞笑<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/ent-life-1.html"><b>日常<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/ent-food-1.html"><b>美食圈<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/ent-animal-1.html"><b>动物圈<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/ent-handmake-1.html"><b>手工<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/ent-painting-1.html"><b>绘画<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/ent-asmr-1.html"><b>ASMR<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/ent-sports-1.html"><b>运动<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/others-1.html"><b>其他<em></em></b></a></li>
+    </ul>
+  </li>
+  <!-- 鬼畜 -->
+  <li class="m-i " data-tid="119">
+    <a class="i-link" href="//www.bilibili.com/video/kichiku.html"><em>鬼畜</em><div class="v-num"><span class="addnew_119">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//www.bilibili.com/video/ent-Kichiku-1.html"><b>鬼畜调教<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/douga-kichiku-1.html"><b>音MAD<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/kichiku-manual_vocaloid-1.html"><b>人力VOCALOID<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/kichiku-course-1.html"><b>教程演示<em></em></b></a></li>
+    </ul>
+  </li>
+  <!-- 时尚 -->
+  <li class="m-i " data-tid="155">
+    <a class="i-link" href="//www.bilibili.com/video/fashion.html"><em>时尚</em><div class="v-num"><span class="addnew_155">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//www.bilibili.com/video/fashion-makeup-fitness-1.html"><b>美妆<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/fashion-clothing-1.html"><b>服饰<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/fashion-body-1.html"><b>健身<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/fashion-info-1.html"><b>资讯<em></em></b></a></li>
+    </ul>
+  </li>
+  <!-- 广告 -->
+  <li class="m-i " data-tid="165">
+    <a class="i-link" href="//www.bilibili.com/video/ad-ad-1.html"><em>广告</em><div class="v-num"><span class="addnew_165">--</span></div></a>
+  </li>
+  <!-- 娱乐 -->
+  <li class="m-i " data-tid="5">
+    <a class="i-link" href="//www.bilibili.com/video/ent.html"><em>娱乐</em><div class="v-num"><span class="addnew_5">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//www.bilibili.com/video/ent-variety-1.html"><b>综艺<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/ent-circle-1.html"><b>明星<em></em></b></a></li>
+      <li><a href="//www.bilibili.com/video/ent-korea-1.html"><b>Korea相关<em></em></b></a></li>
+    </ul>
+  </li>
+  <!-- 影视 -->
+  <li class="m-i " data-tid="23">
+    <a class="i-link" href="//bangumi.bilibili.com/33/"><em>影视</em><div class="v-num"><span class="addnew_23_11">--</span></div></a>
+    <ul class="i_num">
+      <li><a href="//bangumi.bilibili.com/movie/"><b>电影<em></em></b></a></li>
+      <li><a href="//bangumi.bilibili.com/tv/"><b>电视剧<em></em></b></a></li>
+    </ul>
+  </li>
+  <li class="m-i side-nav m-i-zhuanlan">
+    <a class="i-link" href="//www.bilibili.com/read/home">
+      <i class="zhuanlan"></i><b>专栏</b>
+    </a>
+  </li>
+  <li class="m-i side-nav m-i-square">
+    <a class="i-link" href="//www.bilibili.com/square">
+      <i class="square"></i><b>广场</b>
+    </a>
+    <div class="i_num">
+      <ul>
+        <li><a href="//show.bilibili.com/platform/home.html"><i class="vip-buy"></i><b>会员购</b></a></li>
+        <li><a href="//activity.bilibili.com"><i class="b-icon b-icon-n-activity"></i><b>活动中心</b></a></li>
+        <li><a href="//game.bilibili.com"><i class="b-icon b-icon-n-gc"></i><b>游戏中心</b></a></li>
+        <li><a href="//news.bilibili.com"><i class="b-icon b-icon-n-new"></i><b>新闻中心</b></a></li>
+        <li><a href="http://h.bilibili.com/"><i class="b-icon b-icon-n-h"></i><b>画友</b></a></li>
+        <li><a href="//www.bilibili.com/mango"><i class="b-icon b-icon-n-mango"></i><b>芒果TV</b></a></li>
+      </ul>
+    </div>
+  </li>
+  <li class="m-i side-nav m-i-live">
+    <a class="i-link" href="//live.bilibili.com">
+      <i class="live"></i><b>直播</b>
+    </a>
+    <div class="nav-live i_num">
+      <ul>
+        <li><a href="//live.bilibili.com/subject"><b>推荐主播<em></em></b></a></li>
+        <li><a href="//live.bilibili.com/pages/area/ent"><b>生活娱乐<em></em></b></a></li>
+        <li><a href="//live.bilibili.com/draw"><b>绘画专区<em></em></b></a></li>
+        <li><a href="//live.bilibili.com/pages/area/ent"><b>唱见舞见<em></em></b></a></li>
+        <li><a href="//live.bilibili.com/pages/area/ent"><b>御宅文化<em></em></b></a></li>
+        <li><a href="//live.bilibili.com/single"><b>单机联机<em></em></b></a></li>
+        <li><a href="//live.bilibili.com/online"><b>网络游戏<em></em></b></a></li>
+        <li><a href="//live.bilibili.com/e-sports"><b>电子竞技<em></em></b></a></li>
+        <li><a href="//live.bilibili.com/mobile-game"><b>手游直播<em></em></b></a></li>
+      </ul>
+      <div class="live-field">
+        <a class="pic" target="_blank" href="//www.bilibili.com/p/"><img src="picture/wh2.png" alt="有文画"></a>
+        <a class="pic" target="_blank" href="//vc.bilibili.com"><img src="picture/sp2.png" alt="小视频"></a>
+      </div>
+    </div>
+  </li>
+  <li class="m-i side-nav m-i-blackroom">
+    <a class="i-link" href="//www.bilibili.com/blackroom/">
+      <i class="blackroom"></i><b>小黑屋</b>
+    </a>
+  </li>
+</ul>
+          <div class="menu-r">
+            <a id="random_p" class="random-p" target="_blank"></a>
+          </div>
+          <div class="search">
+            <form action="//search.bilibili.com/all" id="searchform" target="_blank">
+            <input name="keyword" type="text" class="search-keyword" id="search-keyword" autocomplete="off" accesskey="s" x-webkit-speech x-webkit-grammar="builtin:translate">
+            <button type="submit" class="search-submit"></button>
+            </form>
+            <a class="link-ranking" href="//www.bilibili.com/ranking" target="_blank"><span>排行榜</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="b-page-body">
+
+      
+    <script>
+        $('.header .num .m-i[data-tid=1]').addClass('on');
+        var topid = '1';
+    </script>
+<script type="text/javascript"> var token = "d41d8cd98f00b204e9800998ecf8427e"; </script>
+<div class="main-inner">
+    <div id="heimu"></div>
+    <div class="viewbox report-scroll-module report-wrap-module" id="viewbox_report">
+        <div class="info">
+        <div class="v-title"><h1 title="{$data['title']}">{$data['title']}</h1></div><div class="arcrank"></div>
+        <div class="tminfo" xmlns:v="//rdf.data-vocabulary.org/#"><a id="homepage" href="/" rel="v:url" property="v:title">主页</a> 
+                        <time itemprop="startDate" datetime="2017-10-13T00:00"><i></i></time>
+                    </div>
+        <div class="v-title-info">
+            <div class="v-title-line" title="总播放数"><i class="b-icon b-icon-a b-icon-play">{$data['count']}</i><span id="dianji"></span></div>
+            <div class="v-title-line" title="总弹幕数"><i class="b-icon b-icon-a b-icon-danmaku">{$count}</i><span id="dm_count"></span></div>
+            <div class="v-title-line v-rank" title="本日日排行数据过期后，再纳入本稿件的历史排行数据进行对比得出"><!-- 排行数据 --></div>
+            <div class="v-title-line v-coin coin_btn" title="投币个数"><i class="b-icon b-icon-a b-icon-coin"></i><span class="coin-status">硬币</span><span id="v_ctimes"></span></div>
+            <div class="v-title-line v-stow fav_btn" title="收藏人数"><i class="b-icon b-icon-a b-icon-stow"></i><span class="stow-status">收藏</span><span id="stow_count"></span></div>
+        </div>
+        
+        </div>
+
+                     <div class="upinfo">
+                    <div class="u-face" id="r-info-rank"><a href="//space.bilibili.com/63231" card="泛式" mid="63231" title="泛式" target="_blank"><img data-fn-size="68" data-fn-src="picture/7e04f2466f118369458cb30e5cdd47d2317454b8.jpg" src="{$data['img']}" alt="泛式" /><div class="u-sign"><img data-fn-size="112" data-fn-src="picture/59c8dca0857e07c5a8cfc8a0bbc1af849a54510d.png" src="//static.hdslb.com/images/transparent.gif" alt="2017拜年祭" /></div></a> <div class="legalize-icon legalize-16-1" title="个人认证"></div></div>
+                    <div class="r-info">
+                        <div class="usname"><a class="name" href="//space.bilibili.com/63231" mid="63231" card="泛式" title="泛式" target="_blank">{$data['nickname']}</a><a mid="63231" href="//message.bilibili.com/#whisper/mid63231" target="_blank" class="message">发消息</a>
+                        </div>
+                        <div class="sign">{$data['user_profile']}</div>
+                        <script type="text/javascript">
+                            if($('.sign').height() > 40) {
+                                $('.sign').addClass('static');
+                                var span_btn = $('<a class="b-btn b-btn-textonly">展开</a>').appendTo($('.sign')).on('click', function(){
+                                    if($('.sign').hasClass('static')) {
+                                        $('.sign').removeClass('static');
+                                        span_btn.html('收起');
+                                    } else {
+                                        $('.sign').addClass('static');
+                                        span_btn.html('展开');
+                                    }
+                                });
+                            }
+                        </script>
+                        <div class="up-video-message">
+                            <div class="archiveCount">投稿：0</div>
+                            <div>粉丝：--</div>
+                        </div>
+                        <div mid="63231" class="b-btn f hide">+ 关注</div>
+                        <div class="b-btn elec hide">充电</div>
+                        
+                    </div>
+                </div>
+                        
+                </div>
+        <div class="ad-f">
+        <div class="left ad-fl"></div>
+        <div class="right ad-fr"></div>
+    </div>
+    </div>
+
+<div class="player-wrapper">
+    <div class="main-inner">
+        <div class="v-plist">
+            <div id="plist"></div>
+        </div>
+    </div>
+    <div id="danmup" style="left: 50%;margin-left:-580px;top:100px">
+    <input type="hidden" name="vidsrc" value="{$data['src']}">
+    <input type="hidden" name="vid" value="{$id}">
+</div>
+<div style="display: none">
+  <span class="glyphicon" aria-hidden="true">&#xe072</span>
+  <span class="glyphicon" aria-hidden="true">&#xe073</span>
+  <span class="glyphicon" aria-hidden="true">&#xe242</span>
+  <span class="glyphicon" aria-hidden="true">&#xe115</span>
+  <span class="glyphicon" aria-hidden="true">&#xe111</span>
+  <span class="glyphicon" aria-hidden="true">&#xe096</span>
+  <span class="glyphicon" aria-hidden="true">&#xe097</span>
+</div>
+    <div class="arc-toolbar report-scroll-module report-wrap-module" id="arc_toolbar_report">
+      <div class="share-tool-bar">
+            <div class="drawer">
+                <span class="title">分享</span><span class="num" title="分享次数"></span><span class="arrow"></span>
+                <div class="share-box" id="share_list" style="display: none;">
+                    <div class="share-left">
+                        <div class="share-time">
+                            <label><input name="has_start_time" type="checkbox">开始时间</label><input name="video_start_time" type="text" value="0:00">
+                        </div>
+                        <div class="share-head">
+                            将视频贴到博客或论坛
+                        </div>
+                        <ul class="share-address-list">
+                            <li class="share-address"><label>视频地址</label><input id="link0" name="video_address" readonly type="text" value=""><span class="address-copy">复制</span></li>
+                            <li class="share-address"><label>Flash地址</label><input id="link1" name="flash_address" readonly type="text" value=""><span class="address-copy">复制</span></li>
+                            <li class="share-address last"><label>Html地址</label><input id="link2" name="html_address" readonly type="text" value=""><span class="address-copy">复制</span></li>
+                        </ul>
+                    </div>
+                    <div class="share-right">
+                        <div class="share-head">
+                            微信扫一扫分享
+                        </div>
+                        <div class="share-btn" id="btn_weixin" title="扫一扫 分享到微信">
+                            <div class="share-weixin">
+                                <div class="qr-code" style="height: 110px;">
+                                    <canvas height="110" width="110"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="share-btn-bar">
+                <div class="g-share-btn weibo" data-id="btn_weibo" title="分享到新浪微博"></div>
+                <div class="g-share-btn qzone" data-id="btn_qqzone" title="分享到QQ空间"></div>
+                <div class="g-share-btn qq" data-id="btn_qq" title="分享到QQ"></div>
+                <div class="g-share-btn tieba" data-id="btn_baidu" title="分享到百度贴吧"></div>
+            </div>
+        </div>
+
+
+        <div class="block fav">
+            <span class="t fav_btn" href="//www.bilibili.com/m/stow?aid=15317897">
+                <i class="b-icon b-icon-a b-icon-anim-fav"></i>
+                <div class="t-right">
+                    <span class="t-right-top">收藏</span>
+                    <span class="t-right-bottom stow_count"></span>
+                </div>
+            </span>
+        </div>
+        <div class="block coin" arctype="Original">
+            <span class="t">
+                <i class="b-icon b-icon-a b-icon-anim-coin"></i>
+                <div class="t-right">
+                    <span class="t-right-top">硬币</span>
+                    <span class="t-right-bottom v_ctimes">-</span>
+                </div>
+            </span>
+        </div>
+        <div class="block watch-later" aid="15317897" title="稍后看">
+            <span class="t">
+                <i class="b-icon b-icon-a b-icon-anim-watch-later"></i>
+                <div class="t-right">
+                    <span class="t-right-top">稍后看</span>
+                    <span class="t-right-bottom">马克一下~</span>
+                </div>
+            </span>
+        </div>
+        <div class="block app" id="app_qrcode_box" title="用手机看">
+            <span class="t">
+                <i class="b-icon b-icon-a b-icon-anim-app"></i>
+                <div class="t-right">
+                    <span class="t-right-top">用手机看</span>
+                    <span class="t-right-bottom">离线看更方便</span>
+                </div>
+            </span>
+            <div class="qr-code-box report-wrap-module" id="video-report-appdownload">
+                <div class="qr-code-box-inner">
+                    <div class="qr-code" id="qr_code"></div>
+                    <div class="qr-info">
+                        <div class="qr-info-head">【FGO周年庆】50位英灵带你回顾国服一周年大事件「FATE/GRAND ANNIVERSARY」</div>
+                        <div class="qr-info-description" id="qr_description"></div>
+                    </div>
+                    <div class="qr-bottom">用<a href="//app.bilibili.com/" target="_blank">哔哩哔哩客户端</a>或其他应用扫描二维码</div>
+                </div>
+            </div>
+        </div>
+        <div class="block zan">
+            <span class="t">
+                <i class="b-icon b-icon-a b-icon-anim-zan" title="点赞"></i>
+                <div class="t-right">
+                    <span class="t-right-top middle">点赞</span>
+                    <span class="t-right-bottom"></span>
+                </div>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="main-inner">
+        <div class="v_small">
+                
+    </div>
+    <div class="v_large">
+                <div class="v_info">
+            <div class="s_tag report-scroll-module report-wrap-module" id="tag_report">
+                <ul class="tag-list">
+                                    </ul>
+                <span id="newtag"></span>
+            </div>
+                        <div class="intro">
+                        <div class="v_desc report-scroll-module report-wrap-module" id="v_desc" data-desc="0">简介: 恭贺FGO国服一周年，跟着从者们的语音回顾这一年的BGO大事件吧~
+使用素材: Fate/Grand Order, Fate/Zero, Fate/ Extella, Fate/ Apocrypha, Fate/Stay night
+视频类型: 混合系MAD
+BGM【音乐名】: You Say Run
+BGM【音乐人】: 林ゆうき</div>
+            </div>
+                    </div>
+                    <div class="v-content">
+                <div class="ad ad-e1"></div>
+                <div class="ad ad-e2"></div>
+            </div>
+                <!--评论-->
+        <div class="common report-scroll-module report-wrap-module" id="common_report">
+            <div class="b-head">
+              <span class="b-head-t results"></span>
+              <span class="b-head-t">评论</span>
+              <a class="del-log" href="//www.bilibili.com/replydeletelog?aid=15317897&title=【FGO周年庆】50位英灵带你回顾国服一周年大事件「FATE/GRAND ANNIVERSARY」" target="_blank">查看删除日志</a>
+            </div>
+            <div class="comm" id="bbComment">
+                <!-- <div id="load_comment" class="comm_open_btn" onclick="var fb = new bbFeedback('.comm', 'arc');fb.show(15317897, 1);" style="cursor:pointer"></div> -->
+            </div>
+        </div>
+    </div>
+    
+
+    
+</div>
+
+
+    </div>
+
+    
+  </body>
+  <script src="__JS__/jquery-2.1.4.min.js"></script>
+<script src="__JS__/jquery.shCircleLoader.js"></script>
+<script src="__JS__/sco.tooltip.js"></script>
+<script src="__JS__/colpick.js"></script>
+<script src="__JS__/jquery.danmu.js"></script>
+<script src="__JS__/main.js"></script>
+<script>
+var src = $("input[name=vidsrc]").val();
+var vid = $("input[name=vid]").val();
+ $.post(
+    "navidata",
+    {'vid':vid},
+    function(data)
+    {
+        for (var i = 0; i < data['navidata'].length; i++) {
+       $("#homepage").after("&gt;<span typeof=v:Breadcrumb><a href="+data['navidata'][i].url+"  property=v:title>"+data['navidata'][i].name+"</a></span>");
+        }
+    }
+    );
+  $("#danmup").DanmuPlayer({
+    src:src,
+    height: "621px", //区域的高度
+    width: "1158px", //区域的宽度
+    left: "100px",
+    urlToGetDanmu:"query?id="+vid
+    ,urlToPostDanmu:"stone?id="+vid
+  });
+
+  </script>
+</html>

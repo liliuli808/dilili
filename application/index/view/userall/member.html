@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="applicable-device" content="pc,mobile">
+<title>个人主页 - 羁绊站群会员中心</title>
+<link rel="stylesheet" href="__BOOTSTRAP__/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="__CSS__/master.css" />
+  <link rel="stylesheet" href="__CSS__/reset.css">
+  <link rel="stylesheet" href="__CSS__/common.css">
+  <link rel="stylesheet" href="__CSS__/index.css">
+  <link rel="stylesheet" type="text/css" href="__CSS__/member.css">
+<!--<script src="/Style/js/main.js"></script>-->
+<link rel="stylesheet" type="text/css" href="__CSS__/sign2_1.css"/>
+
+
+
+
+<script type="text/javascript" src="__BOOTSTRAP__/js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="__BOOTSTRAP__/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!--公用顶部开始-->
+  <header id="header">
+  {include file="public:header"}
+<!--公用顶部结束-->
+<div class="warpbox">
+    <div class="warptit"></div>
+    <div class="w1000 clear">
+
+            <div class="leftside fleft">
+    <h1 class="adminlogo"><strong>会员</strong>中心<em>usr.005.tv</em></h1>
+    <div class="adminbox">
+        <div class="adminname fonttips">liliuli808</div>
+        <div class="adminlink">
+            <button id="btn-sign-user" data-checked="0" data-group="1" class="btn primary"><i class="icon icon-check-circle"></i>签到</button>
+        </div>
+        <div class="admin-extra">
+            <div class="space"></div>
+            <a href="javascript:void(0)" ><span class="pts" id="user_credits" >5</span> <span class="hint">经验</span></a>
+            <a href="javascript:void(0)" title="0% - 当前总经验值：5 / 下一级所需总经验值：100" id="user_level_tips" ><span class="pts">LV1</span> <span class="hint">等级</span></a>
+            <span class="clearfix"></span>
+        </div>
+        <div class="adminlink">
+            <a class="fontblue" href="/User/setting.html">设置</a><a href="/User/loginout.html">退出</a>
+        </div>
+    </div>
+    <ul class="leftnav">
+        <li><a href="{:url('index/userall/user_info')}" class="active" ><em class="zhuye"></em>个人主页</a></li>
+        <li><a href="{:url('index/userall/member')}" ><em class="mood"></em>会员</a></li>
+        <li><a href="{:url('index/userall/upload_head')}"  ><em class="shoucang"></em>修改头像</a></li>
+        <li><a class="opennavbtn" herf="javascript:;" class="active"><em class="guanli"></em>账号管理<span class="openico"></span></a>
+            <div class="navsonbox" style="display:block;" >
+                <a href="{:url('/index/userall/set_user')}" >信息设置</a>   
+            </div>
+        </li>
+          <li><a class="opennavbtn" herf="javascript:;"><em class="haoyou"></em>我的投稿<span class="openico"></span></a>
+            <div class="navsonbox" style="display:none;" >
+                <!--<a href="/Contrib/add.html" >文章投稿</a>-->
+                <!--<a href="/Contrib/all.html" >投稿管理</a>-->
+                <a href="http://www.dilidili.com/member/article_add1.php" >链接投稿</a>
+                  <!--<a href="http://www.dilidili.com/member/article_add1.php">视频投稿</a>-->
+                  <a href="http://www.dilidili.com/member/content_list.php?channelid=17">过往投稿</a>
+                <!--<a href="/Contrib/upload_video.html" >视频投稿</a>-->
+                  <!--<a href="/Contrib/post_all.html" >过往投稿</a>-->
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+        <div class="rightmain fright">
+            <div class="mainbox">
+                <div class="zytop clear">
+                    <div class="adminzy fleft">
+                        <div class="adminnametext">liliuli808<span>1点赞币：<strong>0</strong>个</span></div>
+                        <div class="adminmood fonthui">来说点什么吧~~</div>
+                    </div>
+                    <div class="adminnum fright">
+                    </div>
+                </div>
+
+                <div class="vip">
+                       <div class="vip_head">
+                             <div class="vip_img unvip"></div>
+                                 <div class="v-title">
+                                     <div class="vip-untext">
+                                            <p>和我签订契约,成为魔法少女吧</p>
+                                     </div>
+                                     <div class="vip_button">
+                                        点击购买魔法棒
+                                     </div>
+                                 </div>
+                        </div>
+                        <div style="font-size: 20px">魔法少女专属福利</div>
+                        <div class="pri-content">
+                                    <span class="v-list" style="background-color:#eaf9ff">
+                                            <img src="https://i0.hdslb.com/bfs/vip/c30b2b2536ce3f587576beae9c6c0fa2e7873c01.png" class="v-list-icon">
+                                            <div class="v-list-info">
+                                                <p class="v-list-name">钛合金画质</p>
+                                                <p class="v-list-desc">魔法少女专享1080P画质</p>
+                                            </div>
+                                    </span>
+                                    <span class="v-list" style="background-color: #fff2fe;">
+                                            <img src="http://i0.hdslb.com/bfs/vip/e62c674dd770cf711128023aaa7fb98a911e2425.png" class="v-list-icon">
+                                            <div class="v-list-info">
+                                                <p class="v-list-name">魔法少女专属弹幕</p>
+                                                <p class="v-list-desc">魔法少女高亮粉色弹幕</p>
+                                            </div>
+                                    </span>
+                                    <span class="v-list" style="background-color: #FFE5DF;">
+                                            <img src="http://i0.hdslb.com/bfs/vip/0f0161ac39529a92d3b402ba299c5283073d2e1b.png" class="v-list-icon">
+                                            <div class="v-list-info">
+                                                <p class="v-list-name">魔法少女专属粉色昵称</p>
+                                                <p class="v-list-desc">魔法少女高亮粉色昵称</p>
+                                            </div>
+                                    </span>
+                        </div>
+                </div>
+        </div>
+    </div>
+    <div class="warpbott"></div>
+</div>
+</div>
+<div class="pay-model" style="display: none;">
+        <div class="model-title">
+                开通会员
+        </div>
+        <div class="pay-content">
+                <div class="main">
+                        <div class="pay-sum">
+                            <label class="head-label">开通时长：</label>
+                            <ul id="pay-sum">
+                                <li data="233" data-months="12" class="active">233元 / 年</li>
+                                <li data="68" data-months="3" class="">68元 / 季</li>
+                                <li data="25" data-months="1" class="">25元 / 月</li>
+                            </ul>
+                        </div>
+                        <div class="pay-type">
+                            <label class="head-label">支付方式：</label>
+                            <ul id="pay-type">
+                                <li data-code="alipay" title="支付宝" id="alipay" class="active"></li>
+                                <li data-code="wechat" title="微信" id="wechat" ></li>
+                                </ul>
+                        </div>
+                </div>
+                <div class="modal-close"></div>
+                <button class="btn btn-primary" id="pay-btn">
+                        支付
+                </button>
+        </div>
+</div>
+<script type="text/javascript">
+        var sum = 0;
+        $("#pay-sum").children().click(function(){
+            $("#pay-sum").children().attr('class','');
+                $(this).attr('class','active');
+                
+        });
+        $("#pay-type").children().click(function(){
+            $("#pay-type").children().attr('class','');
+                $(this).attr('class','active');
+        });
+        $("#pay-btn").on('click',function(){
+            sum = $("#pay-sum").children(".active").html();
+              sum = parseInt(sum);  
+                $.post(
+                    "paymember",
+                    {'sum':sum},
+                    function(data)
+                    {
+                        if(data.status)
+                        {
+                            $("#pay-btn").after("<div style='color:green;position: absolute;bottom:110px;left: 100px;font-size: 20px;'>"+data.msg+"</div>");
+                        }else
+                        {
+                            $("#pay-btn").after("<div style='color:red;position: absolute;bottom:110px;left: 100px;font-size: 20px;'>"+data.msg+"</div>");
+                        }
+                    }
+                    );
+        });
+
+        $(".modal-close").on('click',function(){
+            $(".pay-model").hide();
+        });
+        $(".vip_button").on('click',function(){
+            $(".pay-model").show();
+        });
+</script>
+ {include file="public:footer"}
+

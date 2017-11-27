@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <link rel="shortcut icon" href="favicons/1.png">
+
+  <link rel="stylesheet" href="__CSS__/reset.css">
+  <link rel="stylesheet" href="__CSS__/common.css">
+  <link rel="stylesheet" href="__CSS__/index.css">
+  <link rel="stylesheet" href="__CSS__/donwload.css">
+  <link rel="stylesheet" type="text/css" href="__CSS__/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="__CSS__/home.css">
+  <link rel="stylesheet" type="text/css" href="__CSS__/three.css">
+  <!-- bootstrap -->
+    <link rel="stylesheet" href="__BOOTSTRAP__/css/bootstrap.css">
+
+     <link rel="stylesheet" href="__BOOTSTRAP__/css/bootstrap.css">
+    <script type="text/javascript" src="__BOOTSTRAP__/js/jquery-1.12.4.js"></script>
+     <script type="text/javascript" src="__BOOTSTRAP__/js/bootstrap.min.js"></script>
+      <script src="http://open.51094.com/user/myscript/159e341c4a9cc6.html"></script>
+     <!-- QQ -->
+     <!-- <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="appid" data-redirecturi="callback" charset="utf-8"></script> -->
+      <style>
+        .header-top__user .login-box .youxiang img
+          {
+           margin-right:100px;
+          }
+          .header-top__user .login-box .yonghu{
+            float:left;
+            text-decoration: none;
+            margin-right: 0px;
+          }
+      </style>
+</head>
+<body>
+
+  <header id="header">
+  {include file="public:header"}
+
+    <div class="header-c">
+      <div class="page-width">
+        <a href="#" id="header_logo"></a>
+        <p id="header_title"></p>
+        <div id="search" class="clearfix">
+          <div class="search-rank">排行榜</div>
+          <div class="search-box">
+            <input type="text" class="text" placeholder="Search here...">
+            <a href="#" class="btn"><i></i></a>
+            <div class="search-history">
+              <div class="title">历史搜索</div>
+              <div class="list">
+                <a href="#">努巴尼欢乐秀<i></i></a>
+                <a href="#">主播真会玩守望篇<i></i></a>
+                <a href="#">主播真会玩女神篇<i></i></a>
+                <a href="#">暴暴勺暴暴<i></i></a>
+                <a href="#">OverWatch<i></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-title">哔哩哔哩 (゜-゜)つロ 干杯~</div>
+      </div>
+    </div>
+  </header>
+
+  <nav id="nav">
+    <div class="page-width clearfix">
+      <ul class="nav-list">
+        <li class="item item-home">
+          <a href="/" class="link">首页</a>
+        </li>
+        {foreach $data as $val}
+        <li class="item">
+          <a href="{$val['url']}" class="link">
+            <div class="num"><i>887</i></div>
+            {$val['name']}
+          </a>
+          <ul class="nav-item__hover">
+            {foreach $val as $v}
+              {if is_array($v)}
+            <li>
+              <a href="#">
+                <em>{$v['name']}<i></i></em>
+              </a>
+            </li>
+              {/if}
+            {/foreach}
+          </ul>
+        </li>
+        {/foreach}
+        <li class="item item-square">
+          <a href="#" class="link">广场</a>
+          <div class="nav-square__hover">
+            <ul>
+              <li><a href="#"><i class="icon-activity"></i>活动中心</a></li>
+              <li><a href="#"><i class="icon-game"></i>游戏中心</a></li>
+              <li><a href="#"><i class="icon-news"></i>新闻中心</a></li>
+              <li><a href="#"><i class="icon-friend"></i>画友</a></li>
+              <li><a href="#"><i class="icon-tv"></i>芒果TV</a></li>
+            </ul><!-- 
+            <a href="#" class="activity"><img src="__IMAGES__/cont/nav-square__img.jpg" alt="#"></a> -->
+          </div>
+        </li>
+        <li class="item item-live">
+          <a href="#" class="link">直播</a>
+          <ul class="nav-item__hover">
+            <li>
+              <a href="#">
+                <em>推荐主播<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>手机直播<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>绘画专区<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>唱见舞见<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>御宅文化<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>单机联机<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>网络游戏<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>电子竞技<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>手游直播<i></i></em>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <em>放映厅<i></i></em>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="item item-room">
+          <a href="#" class="link">小黑屋</a>
+        </li>
+      </ul>
+      <div class="nav-gif"><img src="__IMAGES__/cont/nav_img.gif" alt="求领养"></div>
+    </div>
+  </nav>
+
+
+  <div id="main">
+    <div class="page-width">
+      <!-- 推广 -->
+      <div class="tag-list-wrp">
+          <div class="b-head">
+              <span class="b-head-i"></span>
+              <span class="b-head-t">热门标签</span>
+              <span class="b-head-s">点击即可查看本区标签的相关内容</span>
+          </div>
+          <div class="tag-list-cnt" id="tag_list" style="height: auto;">
+              <ul class="tag-list">
+                  <li class="tag-item" id="tag_flag" title="全部标签"  tag-id="0" row="1" style="padding-left: 10px; padding-right: 10px;"><span>全部标签</span></li>
+              </ul>
+          </div>
+      </div>
+
+      <!-- 动画 -->
+      <div class="container-body">
+      <div class="b-page-large b-f-left">
+          <div class="b-head">
+              <span class="b-head-i"></span>
+              <span class="b-head-t">最新动态</span>
+              <span class="b-head-s"></span>
+          </div>
+          <div class="vl-dyn-cnt">
+              <ul  class="v-list" id="vl_dyn_list">
+                <div class="storey-box clearfix">
+                     <div class="load-state">
+                        <span class="loading">正在加载....</span>
+                    </div>
+                </div>
+          </ul>
+          </div>
+            <div class="video-list list-c">
+                <div class="vl-hd clearfix">
+                <ul class="vd-list l2" id="vd-list-o">
+                </ul>
+                </div>
+            </div>
+      </div>
+
+           <div class="b-page-small b-f-right">
+              <div class="b-head">
+                    <span class="b-head-t">热门</span>
+              </div>
+              <div class="rlist-wrp">
+                    <ul class="rlist loaded">
+                          <li class="on">
+                              <i class="number n1">1</i>
+                              <div class="preview"><a href="/video/av4495965/" title="【静止系MAD】 BLASTER 【我的英雄学院】" target="_blank"><img data-img="" src="http://i0.hdslb.com/bfs/archive/4ea17d44082efce202ac4840be3895bdf306439e.jpg@320w_200h.webp" loaded="loaded" alt="【静止系MAD】 BLASTER 【我的英雄学院】" style="opacity: 1;"></a><i class="watch-later" aid="4495965"></i></div>
+                              <a class="rl-info" href="/video/av4495965/" title="【静止系MAD】 BLASTER 【我的英雄学院】" target="_blank"><div class="title t">【静止系MAD】 BLASTER 【我的英雄学院】</div><div class="i"><b class="pts" title="综合评分：3955">综合评分：<em number="3955">3955</em></b></div></a>
+                          </li>
+                    </ul>
+              </div>
+          </div>
+</div>
+<script type="text/javascript">
+$("#vl_dyn_list").children('li').on('mouseover',function(){
+            $("#t").animate({height:"50px"});
+});
+
+$("#vl_dyn_list").children('li').on('mouseout',function(){
+            $("#t").animate({height:"25px"});
+});
+$('document').ready(function(){
+   $.post(
+        "getElemnt",
+        {'tid':7},
+        function(data)
+        {
+          $("#vl_dyn_list").children().remove();
+          for (var i = 0; i < data['video'].length; i++) {
+            $("#vl_dyn_list").append('<li><div class="v"><a class="preview cover-preview" href=/index/Radioinfo/show?id='+data['video'][i].vid+'><img src='+data['video'][i].img_src+' loaded="loaded" style="opacity: 1;"></a><a href=/index/Radioinfo/show?id='+data['video'][i].vid+' target="_blank" title='+data['video'][i].title+'><div class="t" id="t">'+data['video'][i].title+'</div><div class="i"><span><i class="b-icon b-icon-v-play"></i><em number="5660">'+data['video'][i].count+'</em></span><span><i class="b-icon b-icon-v-dm"></i><em number="115">115</em></span></div></a></div></li>');
+          }
+        }
+        );
+$.post(
+  "getTag",
+  {'tid':7},
+  function(data)
+  {
+    //alert(data['tag'][0].tagname);
+    for (var i = 0; i < data.length; i++) {
+          $("#tag_flag").after('<li class="tag-item" title='+data[i].tagname+' tag-id=tag'+i+' tag='+data[i].tagname+' row="1" style="padding-left: 10px; padding-right: 10px;" ><span value='+data[i].tagname+'>'+data[i].tagname+'</span><div class="hot"></div></li>');
+    }
+  }
+  );
+
+$.post(
+    "getAll",
+    {'tid':7},
+    function(data)
+    {
+      for (var i = 0; i < data.length; i++) {
+            $("#vd-list-o").append('<li><div class="l-item"><div class="l-l"><a href=/index/Radioinfo/show?id='+data[i].vid+' target="_blank" class="preview cover-preview"><img data-img="" src='+data[i].img_src+' loaded="loaded" alt="【魔法少女小圆MAD】The Eyes【叛逆的物語】" style="opacity: 1;"><div class="back"><div></div></div><div class="fore"><span></span><div class="bar"><div></div></div></div><div class="x"><b class="x2">3:44</b></div></a><i class="watch-later" aid="3026457"></i><a href="//www.bilibili.com/video/av3026457" target="_blank" class="title" title="【魔法少女小圆MAD】The Eyes【叛逆的物語】">'+data[i].title+'</a></div><div class="l-r"><div class="v-desc">自制/sm27316300 作者：Hiroki。本来是参加AniPAFE2015的作品，可惜没赶上。</div><div class="v-info"><span class="v-info-i gk"><i class="b-icon b-icon-v-play" title="观看"></i><span number="448630">'+data[i].count+'</span></span><span class="v-info-i dm"><i class="b-icon b-icon-v-dm" title="弹幕"></i><span number="3588">'+data[i].count+'</span></span><span class="v-info-i sc"><i class="b-icon b-icon-v-fav" title="收藏"></i><span number="34997"></span></span></div><div class="up-info"><a class="v-author" href="//space.bilibili.com/1273021" target="_blank" title="停用CrowsAmvTeam"></a><span class="v-date" title="日期">2015-10-07 21:11:39</span></div></div></div></li>');
+      }
+    }
+  );
+});
+ $("#tag_list ul").on("click","li",function(){
+  tagname = $(this).children().attr('value');
+  $(".tag-item").attr('class','tag-item');
+  $(this).attr('class','tag-item on');
+      $.post(
+        "getElemnt",
+        {'tagname':tagname,'tid':7},
+        function(data)
+        {
+          $("#vl_dyn_list").children().remove();
+          for (var i = 0; i < data['video'].length; i++) {
+            $("#vl_dyn_list").append('<li><div class="v"><a class="preview cover-preview" href=/index/Radioinfo/show?id='+data['video'][i].vid+'><img src='+data['video'][i].img_src+' loaded="loaded" style="opacity: 1;"></a><a href=/index/Radioinfo/show?id='+data['video'][i].vid+' target="_blank" title='+data['video'][i].title+'><div class="t" id="t">'+data['video'][i].title+'</div><div class="i"><span><i class="b-icon b-icon-v-play"></i><em number="5660">'+data['video'][i].count+'</em></span><span><i class="b-icon b-icon-v-dm"></i><em number="115">115</em></span></div></a></div></li>');
+          }
+        }
+        );
+ });
+
+
+</script>
+
+ {include file="public:footer"}

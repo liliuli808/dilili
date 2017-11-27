@@ -1,0 +1,233 @@
+.vip{
+	height: 1080px;
+}
+.vip .vip_head .vip_img{
+	position: relative;
+    top: 163px;
+    left: 149px;
+    z-index: 100;
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    margin-top: -16px;
+    padding: 1px;
+}
+.vip .vip_head .vip_img.unvip{
+	background: url(../images/novip.png) no-repeat;
+}
+
+.v-title
+{
+	position: relative;
+    width: 250px;
+    margin: 0 0 40px 200px;
+}
+
+.v-title .vip-untext
+{
+	position: absolute;
+    left: 134px;
+    top: 40px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    background: url(../images/talk.png) no-repeat;
+    font-size: 16px;
+    color: #EEC900;
+    line-height: 70px;
+    cursor: default;
+}
+.v-title .vip-untext p
+{
+	text-align: center;
+}
+
+.vip_button
+{
+	display: inline-block;
+    width: 158px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00a1d6;
+    text-align: center;
+    cursor: pointer;
+    margin: 171px 0 0px 207px;
+    border-radius: 10px;
+}
+
+.pri-content
+{
+	    padding: 30px 0 10px;
+}
+
+.pri-content .v-list
+{
+	width: 384px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.v-list .v-list-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+.v-list-info {
+    width: 260px;
+    margin-top: 11px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 20px;
+    overflow: hidden;
+    float: left;
+}
+
+ .v-list-name {
+    width: 100%;
+    font-size: 16px;
+    color: #222;
+}
+
+
+ .v-list-info p {
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ .v-list-desc {
+    width: 100%;
+    height: 32px;
+    font-size: 12px;
+    color: #6d757a;
+}
+
+ .v-list-info p {
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pay-model
+{
+	width: 705px;
+    height: 550px;
+    position: fixed;
+    background: #fff;
+    top: 14px;
+    left: 600px;
+    z-index: 999999;
+}
+
+.model-title
+{
+	font-size: 18px;
+    line-height: 64px;
+    color: #00a1d6;
+    visibility: visible;
+    text-align: center;
+}
+
+
+.head-label {
+    font-size: 14px;
+    color: #99a2aa;
+    vertical-align: middle;
+    margin-right: 14px;
+}
+
+.main {
+    margin: 42px 0 0 28px;
+}
+.pay-sum{
+    margin: 35px 0 21px;
+}
+
+
+
+.pay-sum ul li ,.pay-type ul li{
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #cdd5e4;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #222;
+    min-width: 100px;
+    text-align: center;
+    height: 38px;
+    padding: 5px;
+    line-height: 28px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    vertical-align: top;
+}
+
+.head-label {
+    font-size: 14px;
+    color: #99a2aa;
+    vertical-align: middle;
+    margin-right: 14px;
+}
+
+
+
+.pay-type ul,.pay-sum ul {
+    display: inline-block;
+    zoom: 1;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+ .pay-type ul li {
+    background-size: 90px!important;
+    background-repeat: no-repeat!important;
+    background-position: 50%!important;
+}
+
+.pay-type #alipay
+{
+	background: url('http://static.hdslb.com/vip/static/alipayvzk001.png') no-repeat 50%;
+}
+
+.pay-type #wechat
+{
+	background: url('http://static.hdslb.com/vip/static/oYYBAFetQV2ARJwsAAAQCzXBMYY440.png') no-repeat 50%;
+}
+
+.pay-sum ul li.active,.pay-type ul li.active
+{
+	border-color: #00a1d6;
+    box-shadow: inset 0 0 0 1px #00a1d6;
+    color: #00a1d6;
+}
+
+.modal-close
+{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 15px;
+    right: 15px;
+    background: transparent url('http://static.hdslb.com/vip/static/icons-sprite-CX15SDQE.png') no-repeat -23px -151px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+#pay-btn
+{
+	position: absolute;
+	bottom: 253px;
+    right: 400px;
+}
